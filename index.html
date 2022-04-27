@@ -1,110 +1,75 @@
 <!DOCTYPE html>
-
-<html>
 <head>
-    <meta name="viewport" content="width=device-width" />
-    <title>健康平台学生请假系统</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=350, initial-scale=1.0, maximum-scale=1.0, user-scalable=1.0, user-scalable=no;" />
+<META HTTP-EQUIV="pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Cache-Control" CONTENT="no-cache, must-revalidate">
+<META HTTP-EQUIV="expires" CONTENT="Wed, 26 Feb 2007 08:21:57 GMT">
+<title>郑州大学数据中台2021</title>
+<link rel="stylesheet" type="text/css" href="https://jksb.v.zzu.edu.cn/imagesss/_xwss_2017.css" /><style>
+#bak_0 {MARGIN:0 auto; left: 0;WIDTH: 350px; min-HEIGHT:540px;}
 
-    <meta name="renderer" content="webkit" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link href="/qj/public/lib/axui-v1.0.2/css/ax.css" rel="stylesheet" />
-    <script src="/qj/public/lib/jquery/jquery-3.0.0.min.js"></script>
-    <script src="/qj/public/lib/axui-v1.0.2/js/ax.min.js"></script>
-    <link href="/qj/public/lib/layui/src/css/layui.style.css" rel="stylesheet" />
-    <link href="/qj/public/lib/layui/src/css/layui.css" rel="stylesheet" />
-    <script src="/qj/public/lib/commonJS.js"></script>
-    <script src="/qj/public/lib/respond.min.js"></script>
-    <script src="/qj/public/lib/framework-ui.js"></script>
-    
-
-    <link href="/qj/public/lib/weui/weui.css" rel="stylesheet" />
-
+</style>
+<script Language="javascript">
+  function zzjCallOneUrl(us){
+    document.getElementById("zzj_fun_426s").src=us;
+  }
+  var timeID=0;
+var tt1=595;
+tt2=0;
+tt3=0;
+var timeID=setInterval("hnceTimer()",1000);
+function hnceTimer(){
+  tt1--;
+  if (tt1>=0){
+if ((tt1 % 2)==1){
+      document.getElementById('bian92a').style.backgroundColor="#aab0fe";
+      document.getElementById('bian92b1').style.backgroundColor="#aab0fe";
+      document.getElementById('bian92b2').style.backgroundColor="#aab0fe";
+      document.getElementById('bian92c').style.backgroundColor="#aab0fe";
+    }else{
+      document.getElementById('bian92a').style.backgroundColor="#0012ff";
+      document.getElementById('bian92b1').style.backgroundColor="#0012ff";
+      document.getElementById('bian92b2').style.backgroundColor="#0012ff";
+      document.getElementById('bian92c').style.backgroundColor="#0012ff";
+    }
+    tt2=tt1 % 60;
+  tt3=(tt1-tt2)/60;
+  document.getElementById("tim317").innerHTML=tt3+"分"+tt2+"秒";
+  }else{document.getElementById("tim317").innerHTML=tt3+"分"+tt2+"秒";}//永不作废
+}
+</script>
+<script language="javascript">
+  function getCurDate(){ 
+    var d = new Date();
+    //var years = d.getYear(); 
+    var month = add_zero(d.getMonth()+1); 
+    var days = add_zero(d.getDate()); 
+    var hours = add_zero(d.getHours()); 
+    var minutes = add_zero(d.getMinutes()); 
+    //var seconds=add_zero(d.getSeconds()); 
+    var ndate = month+"月"+days+"日 "+" "+hours+":"+minutes+" "; 
+    divT.innerHTML= ndate;
+  }
+  function add_zero(temp){ 
+  if(temp<10) 
+    return "0"+temp; 
+  else 
+    return temp;
+}setInterval("getCurDate()",100);</script>
 </head>
-<body ontouchstart="" onmouseover="">
-    <div class="layui-header header header-index">
-        <div class="layui-container">
-            <a class="layui-logo" href="https://jksb.v.zzu.edu.cn">
-                <img src="/qj/Content/images/logo.png" />
-            </a>
-        </div>
-    </div>
-
-    <div class="layui-layout-body">
-        <div class="layui-container">
-            
-<div class="layui-form" style="border-bottom:1px solid #ddd ;padding:10px;">
-
-    <div style="float:left;text-align:center">
-    <a href="/qj/?ptopid=s33837E7A4201443B879166ED95A138E2&amp;ruid=272003278579192" class="layui-icon layui-icon-prev" style="font-size:22px;color:#333;"></a>
-    </div>
-    <div style="font-size:18px;text-align:center">已销假列表</div>
+    <body>
+    <form method="POST" name="myform52" action="">
+    <div id="bak_0">  
+      <div style="WIDTH: 100%; HEIGHT: 102px;background:url(https://jksb.v.zzu.edu.cn/imagesss/title316_60381.png);"><div style="width:100%;height:32px;line-height:32px;text-align:right"><a href="https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/logout?ptopid=tB183D11D23BA4172B56551569950C1DB"><span style="color:#00c;">〖切换账号〗</span></a>　</div></div><div style="width:100%;height:7px;BACKGROUND-IMAGE: url(/images/split5.png)"></div><div style="WIDTH: 100%; min-HEIGHT: 90px;"><div style="width:100%;height:32%;line-height:32px;text-align:left;"><span style="font-size:12px;color:#333;">获取时间：</span><span  id="divT"style="font-size:16px;color:#a0a;">　</span><span style="font-size:12px;color:#333;">有效期剩余 </span><span id="tim317" style="font-size:22px;color:#c00;font-weight:500;font-family:黑体;">9分54秒</span></div><div style="width:100%;height:7px;BACKGROUND-IMAGE: url(/images/split5.png)"></div>
+      <div style="width:100%;min-height:25px;line-height:25px;font-size:18px;color:#00c;font-weight:500;font-family:黑体;BACKGROUND-IMAGE:url(https://jksb.v.zzu.edu.cn/imagesss/sf_sheng4.png)">　<span style="color:#00a">材料科工学院　李一伟</span><br>　主校区大门东门.<span style="background-color:#c0c;color:#ff0">出口</span><br>　身份：请假被批准的学生[离校]<br /><span style="font-size:12px;color:#666">关注“郑州大学网络管理中心”微信公众号可提醒健康打卡</span></div></div>
+    <div style="width: 100%; height: 25px; background-color: rgb(170, 176, 254);" id="bian92a"></div><div style="width:100%;height:300px;"><div style="width: 25px; height: 100%; background-color: rgb(170, 176, 254); float: left;" id="bian92b1"></div><div style="width:300px;height:100%;float:left;text-align:center;"><img src="https://xwss6.v.zzu.edu.cn/yanp3/B/B81B45E5507D41648F97B30B36E580A4.jpg?sid=220416200928670915" style="height:300px;border:0px;"></div><div style="width: 25px; height: 100%; background-color: rgb(170, 176, 254); float: right;" id="bian92b2"></div></div><div style="width: 100%; height: 25px; background-color: rgb(170, 176, 254);" id="bian92c"></div><div style="width:100%;height:7px;BACKGROUND-IMAGE: url(/images/split5.png)"></div><div style="width:100%;min-height:18px;line-height:18px;font-size:12px;color:#666;text-align:center">郑州大学疫情防控领导小组、保卫处、信息化办公室</div><div style="width:100%;height:18px;line-height:18px;font-size:12px;color:#666;text-align:center" id="msg11"></div>
 </div>
-<div class="list">
-
-    <div class="weui-cells">
-        <div class="weui-cell">
-            <p class="weui-cell__bd">开始日期</p>
-            <p class="weui-cell__bd">类型</p>
-            <p class="weui-cell__bd">状态</p>
-            
-        </div>
-                <a class="weui-cell weui-cell_access" href="/qj/jk_qj/qj_editIndex?ptopid=s33837E7A4201443B879166ED95A138E2&ruid=272003278579192&lsNo=10262884">
-
-                    <p class="weui-cell__bd">
-                        03月12日
-                    </p>
-                    <p class="weui-cell__bd">
-                        事假
-                    </p>
-                    <p class="weui-cell__bd">
-                        销假已批准且已扫码出校
-                    </p>
-                    
-                    <p class="weui-cell__ft" style="color:#0094ff">
-                        详情
-                    </p>
-                </a>
-                <a class="weui-cell weui-cell_access" href="/qj/jk_qj/qj_editIndex?ptopid=s33837E7A4201443B879166ED95A138E2&ruid=272003278579192&lsNo=10286335">
-
-                    <p class="weui-cell__bd">
-                        04月16日
-                    </p>
-                    <p class="weui-cell__bd">
-                        就医体检
-                    </p>
-                    <p class="weui-cell__bd">
-                        -1
-                    </p>
-                    
-                    <p class="weui-cell__ft" style="color:#0094ff">
-                        详情
-                    </p>
-                </a>
-                <a class="weui-cell weui-cell_access" href="/qj/jk_qj/qj_editIndex?ptopid=s33837E7A4201443B879166ED95A138E2&ruid=272003278579192&lsNo=10293502">
-
-                    <p class="weui-cell__bd">
-                        04月27日
-                    </p>
-                    <p class="weui-cell__bd">
-                        其他
-                    </p>
-                    <p class="weui-cell__bd">
-                        -1
-                    </p>
-                    
-                    <p class="weui-cell__ft" style="color:#0094ff">
-                        详情
-                    </p>
-                </a>
+        <div style="width:1px;height:1px;">
+      <iframe name="zzj_fun_426" id="zzj_fun_426s" src="https://jksb.v.zzu.edu.cn/vls6sss/zzujksb.dll/getdipos?ptopid=tB183D11D23BA4172B56551569950C1DB&amp;sid=211207090141144449&amp;fun2=0019" marginwidth="0" marginheight="0" height="100%" width="100%" scrolling="no" border="0" frameborder="0" allowtransparency="true"></iframe>
     </div>
-</div>
-
-        </div>
-    </div>
- 
+    <input type="hidden" name="ptopid" value="tB183D11D23BA4172B56551569950C1DB"><input type="hidden" name="sid" value="211207090141144709"></form>
     
-    <script src="/qj/public/lib/layui/src/layui.js"></script>
-
-</body>
-
-</html>
+    <div style="width:100%;height:50px;"></div>
+    
+    </body></html>
